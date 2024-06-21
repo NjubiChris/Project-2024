@@ -19,7 +19,7 @@ $arr_all = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 
-<div class="section white-text" style="background: #B35458;">
+<div class="section white-text" style="background: #f58627;">
 
 	<div class="section">
 		<h3>Add Food Item</h3>

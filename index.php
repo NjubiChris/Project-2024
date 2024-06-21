@@ -6,7 +6,7 @@ session_start();
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>RestroGirls - The Perfect Food at Your Door!</title>
+	<title>Chipley - The Perfect Food at Your Door!</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<!-- <meta http-equiv="refresh" content="1"> -->

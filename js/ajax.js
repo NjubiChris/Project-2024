@@ -45,7 +45,7 @@ $(function(){
 		} else {
 
 			$.ajax({
-	            url :'/RestroGirls/backends/register.php',
+	            url :'/Chipley/backends/register.php',
 	            type:'POST',
 	            data :{
 	            'name':name,
@@ -104,7 +104,7 @@ $(function(){
 		} else {
 
 			$.ajax({
-	            url :'/RestroGirls/backends/login.php',
+	            url :'/Chipley/backends/login.php',
 	            type:'POST',
 	            data :{
 	            'name':name,

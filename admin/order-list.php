@@ -19,7 +19,7 @@ $arr_all = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
 						
 
-<div class="section white-text" style="background: #B35458;">
+<div class="section white-text" style="background: #f58627;">
 
 	<div class="section">
 		<h3>Orders</h3>
@@ -59,7 +59,7 @@ $arr_all = $query->fetchAll(PDO::FETCH_ASSOC);
             <td><?php echo $key['order_id']; ?></td>
             <td><?php echo $key['user_name']; ?></td>
             <td><?php echo $key['fname']; ?></td>
-            <td><?php echo date( "m/d/Y", strtotime($key['timestamp'])); ?></td>
+            <td><?php echo date( "m/d/Y h:i:s a", strtotime($key['timestamp'])); ?></td>
           </tr>
 
           <?php } ?>

@@ -18,7 +18,7 @@ try {
 }
 
 if (!isset($_REQUEST['key'])) {
-	$arr = array ('msg'=>"User Data API", 'dev'=>"Sanjukta Mishti Chakroborty");
+	$arr = array ('msg'=>"User Data API", 'dev'=>"Chris Mbuthia Njubi");
 
 	echo json_encode($arr);
 
@@ -26,7 +26,7 @@ if (!isset($_REQUEST['key'])) {
 
 } else {
 
-	if (strcmp('mishtikhabo', $_REQUEST['key']) == 0) {
+	if (strcmp('chrisnjubi', $_REQUEST['key']) == 0) {
 
 		$sql = "SELECT * FROM users;";
         $query  = $pdoconn->prepare($sql);

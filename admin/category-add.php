@@ -4,7 +4,7 @@
 <?php require('layout/left-sidebar-short.php'); ?>
 
 
-<div class="section white-text" style="background: #B35458;">
+<div class="section white-text" style="background: #f58627;">
 
 	<div class="section">
 		<h3>Add Categories</h3>

@@ -39,13 +39,13 @@ if (!preg_match($regex_name, $_POST['name']) || !preg_match($regex_email, $_POST
 
 } else {
 
-	date_default_timezone_set("Africa/Nairobi");
+	// date_default_timezone_set("Africa/Nairobi");
 
 	$email = $_POST['email'];
 	$name = $_POST['name'];
 	$password = $_POST['password'];
 
-	$timest = date("d:m:Y h:i:sa");
+	// $timest = date("d:m:Y h:i:sa");
 
 
 	$sql = "SELECT * FROM users WHERE email=?";
@@ -63,9 +63,9 @@ if (!preg_match($regex_name, $_POST['name']) || !preg_match($regex_email, $_POST
 
 	} else {
 
-		$sql = "INSERT INTO users(name,email,password,timestamp) VALUES(?,?,?,?)";
+		$sql = "INSERT INTO users(name,email,password) VALUES(?,?,?)";
 	    $query  = $pdoconn->prepare($sql);
-	    if ($query->execute([$name, $email, $password, $timest])) {
+	    if ($query->execute([$name, $email, $password])) {
 
 	    	$arr = array ('code'=>"1",'msg'=>"You have been registered! Please Go to the Login option for logging in!");
 

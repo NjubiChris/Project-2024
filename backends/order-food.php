@@ -31,7 +31,7 @@ if (!isset($_REQUEST['id'])) {
 	exit();
 }
 
-date_default_timezone_set("Africa/Nairobi");
+// date_default_timezone_set("Africa/Nairobi");
 
 $food_id = $_REQUEST['id'];
 
@@ -41,14 +41,12 @@ $user_id = $_SESSION['user_id'];
 
 $order_id = "RSTGF" . strval(mt_rand(100000, 999999));
 
-$timest = date("d:m:Y h:i:sa");
 
-
-$sql = "INSERT INTO orders(order_id,user_id,food_id,user_name, timestamp) VALUES(?,?,?,?,?)";
+$sql = "INSERT INTO orders(order_id,user_id,food_id,user_name) VALUES(?,?,?,?)";
 
 $query  = $pdoconn->prepare($sql);
 
-if ($query->execute([$order_id, $user_id, $food_id, $user_name, $timest])) {
+if ($query->execute([$order_id, $user_id, $food_id, $user_name])) {
 
 	$_SESSION['msg'] = 'Order Placed! Your Order ID is : '.$order_id;
 

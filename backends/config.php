@@ -3,6 +3,6 @@
 $host = "localhost";
 $user= "root";
 $pwd = "";
-$database = "mishtidb";
+$database = "Chipleydb";
 
 ?>

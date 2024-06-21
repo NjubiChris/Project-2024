@@ -62,7 +62,7 @@ $arr_all = $query->fetchAll(PDO::FETCH_ASSOC);
 			<div class="col s12 m4">
 				<div class="card">
 				    <div class="card-image waves-effect waves-block waves-light">
-				      <img class="activator" src="images/banner<?php echo $j; ?>.jpg">
+				      <img class="activator" src="images/banner-<?php echo $j; ?>.jpg">
 				    </div>
 				    <div class="card-content">
 				      <span class="card-title activator grey-text text-darken-4"><a class="black-text" href=""><?php echo $arr_all[$i+$j-2]['fname']; ?></a><i class="material-icons right">more_vert</i></span>
@@ -70,7 +70,7 @@ $arr_all = $query->fetchAll(PDO::FETCH_ASSOC);
 			          <p>This is a popular Food of India. Order Now to Grab a bite of it!</p>
 			        </div>
 			        <div class="card-content center">
-			          <a href="backends/order-food.php?id=<?php echo $arr_all[$i+$j-2]['id']; ?>" style="background: #ee6e73;" class="btn waves-effect waves-block waves-light" href="">Order Now!</a>
+			          <a href="backends/order-food.php?id=<?php echo $arr_all[$i+$j-2]['id']; ?>" style="background: #ff7600;" class="btn waves-effect waves-block waves-light" href="">Order Now!</a>
 			        </div>
 				    </div>
 				    <div class="card-reveal">

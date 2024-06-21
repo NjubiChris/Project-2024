@@ -23,7 +23,7 @@
 }
 
 .slider .indicators .indicator-item.active{
-	background-color: #ee6e73 !important;
+	background-color: #ff7600 !important;
 }
 
 @media(max-width : 992px) {
@@ -40,4 +40,14 @@
 		padding-left: 35px;
 	}
 	
+}
+
+img.activator {
+	height: 240px;
+	width: 100%;
+	object-fit: cover;
+}
+
+nav, .nav-wrapper, .page-footer {
+	background-color: #ff7600 !important;
 }

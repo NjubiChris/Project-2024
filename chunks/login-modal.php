@@ -20,7 +20,7 @@
 	        
 		  </div>
 
-		  <a href="javascript:void(0)" class="modal-close waves-effect waves-light btn" id="login_btn" style="background: #ee6e73 !important;">Login</a>
+		  <a href="javascript:void(0)" class="modal-close waves-effect waves-light btn" id="login_btn" style="background: #ff7600 !important;">Login</a>
 	      	
 	      </form>
 	    </div>

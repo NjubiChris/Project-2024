@@ -35,7 +35,7 @@
 	        
 		  </div>
 
-		  <a href="javascript:void(0)" id="submit_reg" class="waves-effect waves-light btn" style="background: #ee6e73 !important;">Register</a>
+		  <a href="javascript:void(0)" id="submit_reg" class="waves-effect waves-light btn" style="background: #ff7600 !important;">Register</a>
 	      	
 	      </form>
 	    </div>

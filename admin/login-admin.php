@@ -18,7 +18,11 @@ $password=$_POST['password'];
 $sql = "SELECT * FROM admin WHERE email='$email' AND password='$password'";
 
 $query  = $pdoconn->prepare($sql);
-$query->execute();
+try{
+	$query->execute();
+} catch (PDOException $e) {
+	echo $e->getMessage();
+}
 $arr_login=$query->fetchAll(PDO::FETCH_ASSOC);
 
 
